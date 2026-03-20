@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Clicker</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍪</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="game-container">
+
+  <!-- LEFT PANEL: Buildings -->
+  <div id="buildings-panel">
+    <div class="panel-header">
+      <span>Buildings</span>
+      <div class="buy-mode-group">
+        <button class="buy-mode-btn active" data-amount="1">x1</button>
+        <button class="buy-mode-btn" data-amount="10">x10</button>
+        <button class="buy-mode-btn" data-amount="100">x100</button>
+      </div>
+    </div>
+    <div id="buildings-list"></div>
+    <div id="next-achievement"></div>
+  </div>
+
+  <!-- CENTER PANEL: Cookie Area -->
+  <div id="cookie-area">
+    <div id="ticker">Welcome to Cookie Clicker! Click the big cookie to begin.</div>
+
+    <div id="cookie-display">
+      <div id="cookie-count">0</div>
+      <div id="cookie-label">cookies</div>
+      <div id="cps-display">per second: 0</div>
+    </div>
+
+    <div id="buff-bar"></div>
+
+    <div id="big-cookie-wrapper">
+      <div id="big-cookie"></div>
+    </div>
+
+    <canvas id="particle-canvas"></canvas>
+    <div id="milk"></div>
+  </div>
+
+  <!-- RIGHT PANEL: Store -->
+  <div id="store-panel">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="upgrades">Upgrades</button>
+      <button class="tab-btn" data-tab="stats">Stats</button>
+      <button class="tab-btn" data-tab="options">Options</button>
+    </div>
+
+    <div id="tab-upgrades" class="tab-content active">
+      <div id="upgrades-grid"></div>
+    </div>
+
+    <div id="tab-stats" class="tab-content">
+      <div id="stats-content"></div>
+      <button id="ascend-btn">⭐ Ascend</button>
+    </div>
+
+    <div id="tab-options" class="tab-content">
+      <div class="options-group">
+        <button id="btn-save" class="btn-option">💾 Save Game</button>
+        <button id="btn-export" class="btn-option">📋 Export Save</button>
+        <button id="btn-import" class="btn-option">📥 Import Save</button>
+        <button id="btn-wipe" class="btn-option btn-danger">🗑️ Wipe Save</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Ascension Screen Overlay -->
+<div id="ascension-screen">
+  <div id="heavenly-upgrades"></div>
+</div>
+
+<!-- Floating elements -->
+<div id="notifications"></div>
+<div id="tooltip"></div>
+
+<!-- Scripts in dependency order -->
+<script src="js/format.js"></script>
+<script src="js/data.js"></script>
+<script src="js/state.js"></script>
+<script src="js/buildings.js"></script>
+<script src="js/upgrades.js"></script>
+<script src="js/cps.js"></script>
+<script src="js/clicks.js"></script>
+<script src="js/golden.js"></script>
+<script src="js/achievements.js"></script>
+<script src="js/prestige.js"></script>
+<script src="js/save.js"></script>
+<script src="js/ticker.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cursors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
