@@ -2,7 +2,7 @@
 
 A faithful recreation of [Orteil's Cookie Clicker](https://orteil.dashnet.org/cookieclicker/) built from scratch with vanilla HTML, CSS, and JavaScript.
 
-**[Play Now](https://vardst.github.io/cookieclicker/)**
+**[Play Now](https://famous-concha-bead77.netlify.app/)**
 
 ---
 
